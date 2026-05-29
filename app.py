@@ -5,8 +5,8 @@ import pandas as pd
 import random
 from datetime import datetime
 from chatbot import ask_chatbot
-# import folium
-# from streamlit_folium import st_folium
+import folium
+from streamlit_folium import st_folium
 import time
 import plotly.express as px
 import plotly.graph_objects as go
