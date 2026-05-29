@@ -417,8 +417,6 @@ if page == "Home":
     with col1:
         sort_option = st.selectbox("🔽 Sort Flights By", ["Cheapest", "Highest Price"])
     
-    # with col2:
-    #     travelers = st.number_input("👥 Number of Travelers", min_value=1, max_value=10, value=1)
     with col2:
         days = st.slider("📅 Duration (Days)", min_value=1, max_value=5, value=3, help="How many days for your trip?")
   
@@ -457,7 +455,6 @@ if page == "Home":
             "destination": destination,
             "days": days,
             "budget": budget_type,
-            "travelers": travelers,
             "time": datetime.now().strftime("%Y-%m-%d %H:%M")
         })
         st.session_state["trip_result"] = result
